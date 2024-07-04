@@ -1,0 +1,21 @@
+
+
+@media screen and (max-width: 991px) {
+    .navigation .navbar-nav .nav-item:hover{
+        background: #80489c;
+    }
+    div.navbar-collapse ul li {
+        padding: 10px 0;
+    }
+    .w_control input[type=email] {
+        margin-left: 1.6rem;
+    }
+}
+
+
+@media screen and (max-size: 600px) {
+    .w_control input[type=email] {
+        margin-left: 1.3rem;
+    }
+}
+

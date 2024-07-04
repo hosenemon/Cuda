@@ -1,0 +1,380 @@
+
+
+
+/* ===========================================
+default css 
+=============================================*/
+body{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, a, p{
+    font-family: 'Titillium Web', sans-serif;
+}
+h1{
+    font-size: 40px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+}
+.px8{
+    padding: 80px 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+/* ===========================================
+hero css  start
+=============================================*/
+
+.hero{
+    background: linear-gradient(#87509cce, #87509cc2), url(../images/hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navigation .navbar-nav .nav-item:hover{
+    background: #643a79;
+    border-radius: 3px;
+}
+.navigation .navbar-nav .nav-item.active .nav-link{
+    background: #000;
+    font: #fff;
+}
+.navigation .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0rem 1rem;
+}
+.hero_content {
+    margin: auto;
+    text-align: center;
+    padding: 8rem 0;
+}
+
+.hero_content h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+a.custom_btn {
+    background: #eb7d4b;
+    color: #fff;
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 3px solid #c86a40;
+    display: inline-block;
+    border-radius: 3px;
+    margin-top: 50px;
+}
+
+
+header.header {
+    padding: 1rem 0;
+}
+header.header.fixed {
+    background: #643a79;
+    z-index: 111;
+    width: 100%;
+    display: block;
+    top: 0;
+    position: fixed;
+    padding: 0;
+    transition: .3s ease-in-out;
+}
+
+/* ===========================================
+services  start
+=============================================*/
+.services {
+    background: linear-gradient(#17c2a3bd, #17c2a3e5), url(../images/services-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section_title {
+    margin: auto;
+    text-align: center;
+    max-width: 600px;
+}
+.section_title h1 {
+    text-align: center;
+    padding-bottom: 16px;
+    position: relative;
+    font-weight: 700;
+}
+
+.section_title h1::after {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    width: 100px;
+    height: 3px;
+    background: #c8d9e5;
+    content: "";
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+.services_box {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.services_box h3 {
+    padding-top: 30px;
+    font-weight: 700;
+}
+.services_box img {
+    margin: auto;
+}
+
+/* ===========================================
+About  start
+=============================================*/
+
+.about{
+    background: #e7f1f8;
+    color: #3c4761;
+}
+
+.team_img {
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.team_box {
+    text-align: center;
+    padding-top: 40px;
+}
+.team_box h3 {
+    padding: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.team_box h6 {
+    font-size: 18px;
+    color: #30bae7;
+}
+
+.team_social a {
+    display: inline-block;
+    background: #bdd1df;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.team_social a:hover i {
+    transform: rotateY(360deg);
+}
+
+.team_social a i {
+    transition: 1s;
+}
+
+/* ===========================================
+our_skill  start
+=============================================*/
+.our_skill{
+    background: linear-gradient(rgba(255, 255, 255, 0.938), rgba(255, 255, 255, 0.925)), url(../images/skill_bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.skill_title, .skill_box{
+    color: #3c4761;
+    text-align: center;
+}
+.skill_box h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+svg.radial-progress text{
+    fill: #3c4761;
+}
+svg.radial-progress circle{
+    stroke-width: 5px;
+}
+svg.web_design circle{
+    stroke: #30bae7;
+}
+svg.html_css circle{
+    stroke: #d74680;
+}
+svg.graphic_design circle{
+    stroke: #15c7a8;
+}
+svg.ui_ux circle{
+    stroke: #eb7d4b;
+}
+
+/* ===========================================
+portfolio  start
+=============================================*/
+
+.portfolio{
+    background: #ffdd99;
+}
+.portfolio_title{
+    color:#393939;
+}
+.portfolio_filter_btn button{
+    background: #ebc985;
+    color: #393939;
+    padding: 0.15rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin: 0 .2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.portfolio_filter_btn .mixitup-control-active{
+    background: #fff;
+    color: #393939;
+}
+.portfolio_filter_btn {
+    text-align: center;
+    margin: 1rem 0px 2.5rem 0;
+}
+.portfolio_item {
+    text-align: center;
+    color: #393939;
+}
+
+.portfolio_item h3 {
+    margin: 15px 0 35px 0;
+    font-size: 1.6rem;
+}
+a.port_btn{
+    background: #17c2a4 !important;
+    border-bottom: 3px solid #14a58c;
+}
+.portfolio_btn {
+    text-align: center;
+}
+
+/* ===========================================
+testimonials  start
+=============================================*/
+.testimonials{
+    background: linear-gradient(#d74680e3, #d74680e5), url(../images/testimonials_bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+.feedback_box {
+    display: flex;
+    margin: 1rem;
+}
+
+.client_img img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.client_img {
+    margin-right: 30px;
+}
+
+.client_text h4 {text-transform: uppercase;}
+
+p.client_title {
+    color: #ffdd99;
+}
+
+/* ===========================================
+contact  start
+=============================================*/
+.contact{
+    background: linear-gradient(#3c5399c7, #3c5399e3), url(../images/contact_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.w_control {
+    width: 48%;
+    float: left;
+    margin: 1rem 0;
+}
+
+.w_control input[type=email] {
+    margin-left: 2.1rem;
+}
+
+.w_control input, .w_control input:focus {
+    background: #273a7187;
+    color: #fff;
+}
+.contact_form_wrapper{
+    width: 900px;
+    margin: auto;
+}
+.contact_form textarea, .contact_form textarea:focus {background: #273a7180;color: #fff;}
+input.form_btn {
+    margin: auto;
+    display: block;
+    padding: .5rem 2.5rem;
+    border: none;
+    outline: none;
+    background: #30bae7;
+    border-bottom: 3px solid #299ec5;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+/* ===========================================
+footer  start
+=============================================*/
+footer.footer {
+    text-align: center;
+    background: #344b8e;
+    padding: 30px 0;
+}
+
+p.footer_text {
+    margin: 0;
+    padding: 0;
+}
+p.footer_text a {
+    color: #fff;
+    text-decoration: underline;
+}
+.go_top {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    color: #fff;
+    background: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: .5s;
+    display: none;
+    border: 0;
+    outline: none;
+}
+
+.go_top:hover {
+    opacity: .5;
+}
